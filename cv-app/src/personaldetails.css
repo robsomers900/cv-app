@@ -1,0 +1,17 @@
+.personal-details-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-width: 450px;
+  }
+
+  .personal-details{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    height: auto;
+    margin: 4%;
+    border-radius: 18px;
+    padding-bottom: 1rem;
+  
+  }

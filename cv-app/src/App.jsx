@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import PersonalDetails from './personaldetails'
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
   }
   return(
     <>
-      <LeftSide  
+      <PersonalDetails  
         handleNameChange={handleNameChange} 
         name={name}
         handleEmailChange={handleEmailChange}
@@ -51,32 +52,6 @@ function RightSide({name, email, address}){
         </h4>
       </div>
     </div>
-  )
-}
-
-
-
-function LeftSide({name, handleNameChange, email, handleEmailChange, address, handleAddressChange}){
-  return (
-    <>
-      <div className='left-container'>
-        <form className='personal-details'>
-          <h1>Personal Details</h1>
-          <div className='input-group'>
-            <label htmlFor="full-name">Full Name</label>
-            <input type="text" name="full-name" id="full-name" value={name} onChange={(event) => handleNameChange(event)} />
-          </div>
-          <div className='input-group'>
-            <label htmlFor="email">Email</label>
-            <input type="email" name="email" id="email" value={email} onChange={(event) => handleEmailChange(event)}/>
-          </div>
-          <div className='input-group'>
-            <label htmlFor="address">Address</label>
-            <input type="text" name="address" id="address" value={address} onChange={(event) => handleAddressChange(event)}/>
-          </div>
-        </form>
-      </div>
-    </>
   )
 }
 

@@ -4,6 +4,9 @@ html, body ,#root{
   display: flex;
   flex-direction: row;
 }
+html{
+  min-width: 1000px;
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
