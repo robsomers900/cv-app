@@ -1,52 +1,17 @@
-input-group{
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  margin-bottom: 1rem;
-  align-items: flex-start;
-}
-
 label{
   color: black;
   margin-bottom: 0.5rem;
   text-align: left;
 }
 
-input{
-  background-color: var(--main-bg-color);
-  border: 2px solid black;
-  border-radius: 12px;
-  padding: 10px;
+
+.cv-container{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  aspect-ratio: 1/1.414;
+  background-color: #fff;
   
-  transition: border .25s, box-shadow .25s;
-  color: black;
-  width: 90%;
-}
-
-.personal-details, .education, .work-experience{
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  height: auto;
-  margin: 4%;
-  border-radius: 18px;
-  padding-bottom: 1rem;
-
-}
-
-.left-container{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  min-width: 450px;
-}
-
-.right-container{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  background-color: #fff;
-  min-width: 450px;
 }
 
 #root {
@@ -89,10 +54,4 @@ input{
 
 .read-the-docs {
   color: #888;
-}
-
-.contact-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
 }

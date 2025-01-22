@@ -39,18 +39,7 @@ function App() {
 
 function RightSide({name, email, address}){
   return(
-    <div className='right-container'>
-      {/* <h1>
-        {name}
-      </h1>
-      <div className='contact-container'>
-        <h4>
-          {email}
-        </h4>
-        <h4>
-          {address}
-        </h4>
-      </div> */}
+    <div className='cv-container'>
       <PersonalDetailsRender 
         name={name} 
         email={email} 
