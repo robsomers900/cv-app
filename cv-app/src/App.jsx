@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import PersonalDetails from './personaldetails'
+import {PersonalDetails, PersonalDetailsRender} from './personaldetails'
 
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
 function RightSide({name, email, address}){
   return(
     <div className='right-container'>
-      <h1>
+      {/* <h1>
         {name}
       </h1>
       <div className='contact-container'>
@@ -50,9 +50,16 @@ function RightSide({name, email, address}){
         <h4>
           {address}
         </h4>
-      </div>
+      </div> */}
+      <PersonalDetailsRender 
+        name={name} 
+        email={email} 
+        address={address}/>
     </div>
   )
 }
+
+
+
 
 export default App

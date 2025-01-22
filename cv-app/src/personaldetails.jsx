@@ -1,6 +1,6 @@
 import './personaldetails.css'
 
-export default function PersonalDetails({name, handleNameChange, email, handleEmailChange, address, handleAddressChange}){
+function PersonalDetails({name, handleNameChange, email, handleEmailChange, address, handleAddressChange}){
     return (
       <>
         <div className='personal-details-container'>
@@ -23,3 +23,23 @@ export default function PersonalDetails({name, handleNameChange, email, handleEm
       </>
     )
   }
+
+  function PersonalDetailsRender({name, email, address}){
+    return(
+      <>
+        <h1>
+          {name}
+        </h1>
+        <div className='contact-container'>
+          <h4>
+            {email}
+          </h4>
+          <h4>
+            {address}
+          </h4>
+        </div>
+      </>
+    )
+  }
+  
+export {PersonalDetails, PersonalDetailsRender}
