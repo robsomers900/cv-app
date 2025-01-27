@@ -31,6 +31,10 @@ function App() {
   const handleYearChange = (event) => {
     setYear(event.target.value)
   }
+  const [jobDescription, setJobDescription] = useState("")
+  const handleJobDescriptionChange = (event) => {
+    setJobDescription(event.target.value)
+  }
   return(
     <>
     <div className='personal-details-container'>
@@ -49,24 +53,37 @@ function App() {
         title={title}
         handleYearChange={handleYearChange}
         year={year}
+        handleJobDescriptionChange={handleJobDescriptionChange}
+        jobDescription={jobDescription}
         />
     </div>
       <RightSide 
         name={name}
         email={email}
         address={address}
+        company={company}
+        title={title}
+        year={year}
+        jobDescription={jobDescription}
         />
     </>
   )
 }
 
-function RightSide({name, email, address}){
+function RightSide({name, email, address, company, title, year, jobDescription}){
   return(
     <div className='cv-container'>
       <PersonalDetailsRender 
         name={name} 
         email={email} 
-        address={address}/>
+        address={address}
+        />
+      <WorkExperienceRender
+        company={company}
+        title={title}
+        year={year}
+        jobDescription={jobDescription}
+      />
 
     </div>
   )

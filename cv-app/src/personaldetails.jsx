@@ -24,7 +24,7 @@ function PersonalDetails({name, handleNameChange, email, handleEmailChange, addr
 
   function PersonalDetailsRender({name, email, address}){
     return(
-      <>
+      <div className='personal-details-cv-container'>
         <h1>
           {name}
         </h1>
@@ -36,7 +36,7 @@ function PersonalDetails({name, handleNameChange, email, handleEmailChange, addr
             {address}
           </h4>
         </div>
-      </>
+      </div>
     )
   }
   
