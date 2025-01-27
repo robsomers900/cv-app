@@ -4,6 +4,12 @@ label{
   text-align: left;
 }
 
+.personal-details-container{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 450px;
+}
 
 .cv-container{
   display: flex;
@@ -11,7 +17,7 @@ label{
   width: 50%;
   aspect-ratio: 1/1.414;
   background-color: #fff;
-  
+  border: 1px solid black;
 }
 
 #root {
